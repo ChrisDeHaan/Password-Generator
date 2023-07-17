@@ -16,6 +16,8 @@ This project is to develop a password generator that is designed to allow users 
 - <a href="https://developer.mozilla.org/en-US/docs/Learn">mdn web docs</a>
 - <a href="https://www.tutorialspoint.com/How-to-limit-an-HTML-input-box-so-that-it-only-accepts-numeric-input#:~:text=We%20use%20the%20%3Cinput%20type,get%20a%20numeric%20input%20field">Numeric input fields</a>
 - <a href="https://stackoverflow.com/questions/25028853/addeventlistener-two-functions">Mutliple functions per Event Listener</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN">isNaN() for use in filtering NaN</a>
+- <a href="https://stackoverflow.com/questions/1288095/append-to-string-variable">+= concatanation</a>
 
 ## License
 
