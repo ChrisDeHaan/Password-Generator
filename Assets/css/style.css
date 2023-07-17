@@ -88,6 +88,10 @@ header {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: rgb(94, 93, 93);
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
