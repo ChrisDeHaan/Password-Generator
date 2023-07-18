@@ -10,7 +10,7 @@ https://chrisdehaan.github.io/Password-Generator/
 
 ## Mock-Ups
 
-![mock-up of deployed site](./Assets/img/03-javascript-homework-demo.png)
+![mock-up of deployed site](./Assets/img/password-generator-mock-up.png)
 
 ## References
 
