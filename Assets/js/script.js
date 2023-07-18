@@ -9,6 +9,8 @@ function writePassword() {
   //Need to give users something visual after the alerts for incorrect inputs, so we'll run an if statement to catch the returns outside scope
   if (password === undefined) {
     passwordText.value = "There was an error generating your password. Please try again."
+  } else if (password == 0) {
+    passwordText.value = "You don't want a password? :("
   } else {
     passwordText.value = password;
   }
@@ -30,6 +32,9 @@ function generatePassword() {
   if (isNaN(length)) {
     alert("Please use only numbers!");
     return;
+  } else if (length == 0) {
+    alert("You need to set a password length!")
+    return 0;
   } else if (length < 8) {
     alert("Minimum length is 8.");
     return;
@@ -69,7 +74,7 @@ function generatePassword() {
   }
 
   //now we have our dynamic generatedPassword as well as the desired length. time to run a for loop to create the password
-  //we'll create a new variable to randomize the generatedString into for our final password
+  //we'll create a new variable that we can randomize the generatedString into for our final password
   let generatedPassword = ''
 
   for (let i = 0; i < length; i++) {

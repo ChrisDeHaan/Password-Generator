@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  /* darkmode purist. please forgive me. */
+  /* darkmode enthusiast. please forgive me. */
   background-color: rgb(94, 93, 93);
 }
 
@@ -41,6 +41,8 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  /* adding center aligned because I think it looks cleaner */
+  text-align: center;
 }
 
 .card-header::after {
