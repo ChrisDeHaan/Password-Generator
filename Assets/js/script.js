@@ -6,13 +6,12 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
+  //Need to give users something visual after the alerts for incorrect inputs, so we'll run an if statement to catch the returns outside scope
   if (password === undefined) {
     passwordText.value = "There was an error generating your password. Please try again."
   } else {
     passwordText.value = password;
   }
-  
-
 }
 
 // Add event listener to generate button
@@ -23,7 +22,7 @@ function generatePassword() {
 
   let lengthPrompt = prompt("Please select a password length between 8 - 128.", "20");
 
-  //need to turn the string into a number
+  //need to turn the string from the prompt into a number
   length = Number(lengthPrompt);
 
   //time to filter out min/max/Nan
@@ -39,12 +38,10 @@ function generatePassword() {
     return;
   }  
 
-  //we'll set up the string we'll use for our final password
-
+  //we'll set up the string we'll use to create our password
   let generatedString = ''
 
   //some confirm prompts to concatanate to our generatedPassword using true/false
-
   let lowerCaseConfirm = confirm("Would you like your password to include lowercase letters?")
     if (lowerCaseConfirm == true) {
       generatedString += 'abcdefghijklmnpqrstuvwxyz';
@@ -73,14 +70,12 @@ function generatePassword() {
 
   //now we have our dynamic generatedPassword as well as the desired length. time to run a for loop to create the password
   //we'll create a new variable to randomize the generatedString into for our final password
-
   let generatedPassword = ''
 
   for (let i = 0; i < length; i++) {
     function randomizeString() {
       return generatedString[(Math.floor(Math.random() * generatedString.length))]
     }
-
     generatedPassword += randomizeString();
   }
 
