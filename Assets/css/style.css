@@ -89,6 +89,7 @@ header {
   cursor: pointer;
 }
 
+/* added a hover effect */
 .btn:hover {
   background-color: rgb(94, 93, 93);
 }
