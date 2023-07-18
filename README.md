@@ -6,6 +6,8 @@ This project is to develop a password generator that is designed to allow users 
 
 ## Deployed Link
 
+https://chrisdehaan.github.io/Password-Generator/
+
 ## Mock-Ups
 
 ![mock-up of deployed site](./Assets/img/03-javascript-homework-demo.png)
@@ -18,6 +20,7 @@ This project is to develop a password generator that is designed to allow users 
 - <a href="https://stackoverflow.com/questions/25028853/addeventlistener-two-functions">Mutliple functions per Event Listener</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN">isNaN() for use in filtering NaN</a>
 - <a href="https://stackoverflow.com/questions/1288095/append-to-string-variable">+= concatanation</a>
+- <a href="https://stackoverflow.com/questions/37167380/in-if-statement-undefined-equals-with-false">helpful falsy answers</a>
 
 ## License
 
