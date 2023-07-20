@@ -25,7 +25,7 @@ function generatePassword() {
   let lengthPrompt = prompt("Please select a password length between 8 - 128.", "20");
 
   //need to turn the string from the prompt into a number
-  length = Number(lengthPrompt);
+  let length = Number(lengthPrompt);
 
   //time to filter out min/max/Nan
   //learned that NaN is always falsy, so need to use this function for NaN filter isNaN()
@@ -78,10 +78,7 @@ function generatePassword() {
   let generatedPassword = ''
 
   for (let i = 0; i < length; i++) {
-    function randomizeString() {
-      return generatedString[(Math.floor(Math.random() * generatedString.length))]
-    }
-    generatedPassword += randomizeString();
+    generatedPassword += generatedString[(Math.floor(Math.random() * generatedString.length))];
   }
 
   return generatedPassword
